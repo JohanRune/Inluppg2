@@ -22,6 +22,11 @@ public class Varelse {
         this.barn4 = barn4;
     }
 
+    public Varelse (String namn, Varelse förälder){
+        this.namn = namn;
+        this.förälder = förälder;
+    }
+
 
     public Varelse getFörälder() {
         return förälder;
