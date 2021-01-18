@@ -7,65 +7,65 @@
  */
 public class Varelse {
     private String namn;
-    private Varelse förälder;
-    private Varelse barn1;
-    private Varelse barn2;
-    private Varelse barn3;
-    private Varelse barn4;
+    private Varelse chef;
+    private Varelse underordnad1;
+    private Varelse underordnad2;
+    private Varelse underordnad3;
+    private Varelse underordnad4;
 
-    public Varelse (String namn, Varelse förälder, Varelse barn1, Varelse barn2, Varelse barn3, Varelse barn4){
+    public Varelse (String namn, Varelse chef, Varelse underordnad1, Varelse underordnad2, Varelse underordnad3, Varelse underordnad4){
         this.namn = namn;
-        this.förälder = förälder;
-        this.barn1 = barn1;
-        this.barn2 = barn2;
-        this.barn3 = barn3;
-        this.barn4 = barn4;
+        this.chef = chef;
+        this.underordnad1 = underordnad1;
+        this.underordnad2 = underordnad2;
+        this.underordnad3 = underordnad3;
+        this.underordnad4 = underordnad4;
     }
 
-    public Varelse (String namn, Varelse förälder){
+    public Varelse (String namn, Varelse chef){
         this.namn = namn;
-        this.förälder = förälder;
+        this.chef = chef;
     }
 
 
-    public Varelse getFörälder() {
-        return förälder;
+    public Varelse getChef() {
+        return chef;
     }
 
-    public void setFörälder(Varelse förälder) {
-        this.förälder = förälder;
+    public void setChef(Varelse chef) {
+        this.chef = chef;
     }
 
-    public Varelse getBarn1() {
-        return barn1;
+    public Varelse getUnderordnad1() {
+        return underordnad1;
     }
 
-    public void setBarn1(Varelse barn1) {
-        this.barn1 = barn1;
+    public void setUnderordnad1(Varelse underordnad1) {
+        this.underordnad1 = underordnad1;
     }
 
-    public Varelse getBarn2() {
-        return barn2;
+    public Varelse getUnderordnad2() {
+        return underordnad2;
     }
 
-    public void setBarn2(Varelse barn2) {
-        this.barn2 = barn2;
+    public void setUnderordnad2(Varelse underordnad2) {
+        this.underordnad2 = underordnad2;
     }
 
-    public Varelse getBarn3() {
-        return barn3;
+    public Varelse getUnderordnad3() {
+        return underordnad3;
     }
 
-    public void setBarn3(Varelse barn3) {
-        this.barn3 = barn3;
+    public void setUnderordnad3(Varelse underordnad3) {
+        this.underordnad3 = underordnad3;
     }
 
-    public Varelse getBarn4() {
-        return barn4;
+    public Varelse getUnderordnad4() {
+        return underordnad4;
     }
 
-    public void setBarn4(Varelse barn4) {
-        this.barn4 = barn4;
+    public void setUnderordnad4(Varelse underordnad4) {
+        this.underordnad4 = underordnad4;
     }
 
     public String getNamn(){

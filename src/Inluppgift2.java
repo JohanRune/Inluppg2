@@ -60,8 +60,8 @@ public class Inluppgift2 {
             if (varelse.getNamn().equals("Tomten")) {
                 return lista;
             }
-            lista.add(0, varelse.getFörälder().getNamn());
-            hierarki(varelse.getFörälder(), lista);
+            lista.add(0, varelse.getChef().getNamn());
+            hierarki(varelse.getChef(), lista);
 
         }
         catch (NullPointerException e) {
