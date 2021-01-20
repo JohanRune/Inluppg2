@@ -37,10 +37,10 @@ public class Inluppgift2 {
         blyger = new Varelse("Blyger", glader);
         skumtomten = new Varelse("Skumtomten", trötter, dammråttan, null, null, null);
         dammråttan = new Varelse("Dammråttan", skumtomten);
-        rådjuret = new Varelse("Rådjuret", trötter);
-        nyckelpigan = new Varelse("Nyckelpigan", trötter);
-        haren = new Varelse("Haren", trötter);
-        räven = new Varelse("Räven", trötter, gråsuggan, myran, null, null);
+        rådjuret = new Varelse("Rådjuret", butter);
+        nyckelpigan = new Varelse("Nyckelpigan", butter);
+        haren = new Varelse("Haren", butter);
+        räven = new Varelse("Räven", butter, gråsuggan, myran, null, null);
         gråsuggan = new Varelse("Gråsuggan", räven);
         myran = new Varelse("Myran", räven, bladlusen, null, null, null);
         bladlusen = new Varelse("Bladlusen", myran);
