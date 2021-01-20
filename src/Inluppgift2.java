@@ -32,13 +32,13 @@ public class Inluppgift2 {
     private static List<Varelse> tomtarna = new ArrayList<>();
 
     public static void main(String[] args) {
-        tomtarna.add(tomten = new Varelse("Tomten", null, glader, butter, null, null));
-        tomtarna.add(glader = new Varelse("Glader", tomten, tröger, trötter, blyger, null));
-        tomtarna.add(butter = new Varelse("Butter", tomten, rådjuret, nyckelpigan, haren, räven));
-        tomtarna.add(tröger = new Varelse("Tröger", glader));
-        tomtarna.add(trötter = new Varelse("Trötter", glader, skumtomten, null, null, null));
-        tomtarna.add(blyger = new Varelse("Blyger", glader));
-        tomtarna.add(skumtomten = new Varelse("Skumtomten", trötter, dammråttan, null, null, null));
+       tomtarna.add(tomten = new Varelse("Tomten", null, glader, butter, null, null));
+       tomtarna.add(glader = new Varelse("Glader", tomten, tröger, trötter, blyger, null));
+       tomtarna.add(butter = new Varelse("Butter", tomten, rådjuret, nyckelpigan, haren, räven));
+       tomtarna.add(tröger = new Varelse("Tröger", glader));
+       tomtarna.add(trötter = new Varelse("Trötter", glader, skumtomten, null, null, null));
+       tomtarna.add(blyger = new Varelse("Blyger", glader));
+       tomtarna.add(skumtomten = new Varelse("Skumtomten", trötter, dammråttan, null, null, null));
        tomtarna.add(dammråttan = new Varelse("Dammråttan", skumtomten));
        tomtarna.add(rådjuret = new Varelse("Rådjuret", butter));
        tomtarna.add(nyckelpigan = new Varelse("Nyckelpigan", butter));
