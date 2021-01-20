@@ -53,7 +53,7 @@ public class Inluppgift2 {
         Varelse varelse = vilkenVarelse(indata);
 
         List<String> namnLista = new ArrayList();
-        namnLista = hierarki(varelse, namnLista);
+        namnLista = hierarki(varelse, namnLista, 4);
         for (String namn : namnLista) {
             System.out.println(namn);
         }
@@ -61,14 +61,19 @@ public class Inluppgift2 {
 
 
     //rekursiv funktion
-    public static List<String> hierarki(Varelse varelse, List<String> lista) {
+    public static List<String> hierarki(Varelse varelse, List<String> lista, int index) {
 
         try {
-            if (varelse.getNamn().equals("Tomten")) {
+            if (varelse.getChef().getNamn().equals("null")) {
                 return lista;
             }
-            lista.add(0, varelse.getChef().getNamn());
-            hierarki(varelse.getChef(), lista);
+            //if (index == 0)
+            //    return lista;
+        
+
+                lista.add(0, varelse.getChef().getNamn());
+                hierarki(varelse.getChef(), lista, index - 1);
+                return lista;
 
         } catch (NullPointerException e) {
             System.out.println("Fel inträffade");
